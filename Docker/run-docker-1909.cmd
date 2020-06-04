@@ -1,0 +1,1 @@
+docker run -it -v %cd%\..\Files:C:\app\Files --rm 1909-pdf-to-word:latest cmd

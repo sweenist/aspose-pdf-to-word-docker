@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net462</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="FileThatFailsIn1909.pdf" />
+    <None Remove="ThisFileIsOkay.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Files\FileThatFailsIn1909.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\ThisFileIsOkay.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.PDF" Version="20.6.0" />
+    <PackageReference Include="Aspose.Words" Version="20.6.0" />
+  </ItemGroup>
+
+</Project>
