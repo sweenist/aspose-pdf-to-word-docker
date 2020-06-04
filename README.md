@@ -1,7 +1,7 @@
 # aspose-pdf-to-word-docker
 Providing repro steps for Aspose regarding ticket 174403
 
-# Steps to reproduce failure to convert certain PDFs to Word on docker in Windows
+## Steps to reproduce failure to convert certain PDFs to Word on docker in Windows
 
 * Build the Release configuration for PdfToWordDocker.sln 
 * From the docker folder:
